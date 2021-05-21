@@ -1,0 +1,21 @@
+div.summary {
+    width: auto;
+    padding: 2em;
+    /* For responsive display want something like this, where minimum
+       width matches value in @media section of styles.css */
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+div.summary div.summaryresource {
+    padding: 0;
+}
+
+div.summaryresource select {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(70, 138, 185, 0.2);
+    border: none;
+}

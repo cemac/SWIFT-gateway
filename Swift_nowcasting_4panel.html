@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SWIFT nowcasting</title>
+  <link href="https://sci.ncas.ac.uk/swift/css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/gateway.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="init()">
+
+  <div id="container">
+    <div id="header">
+      <div id="mainlogo">
+        <a href="https://sci.ncas.ac.uk/swift/" id="logoimage"><img src="https://sci.ncas.ac.uk/swift/img/swiftcatalogue_version2.svg" alt="GCRF Swift Logo"></a>
+        <ul class="menu horiz" id="mainmenu">
+          <li><a href="https://sci.ncas.ac.uk/swift/">Home</a></li>
+          <li><a href="https://sci.ncas.ac.uk/swift/pages/about">About</a></li>
+          <li><a href="https://sci.ncas.ac.uk/swift/pages/guide">Guide</a></li>
+          <li><a href="https://sci.ncas.ac.uk/swift/pages/products">Products</a></li>
+          <li><a href="https://sci.ncas.ac.uk/swift/pages/contact">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="mobhead">
+        <a href="https://sci.ncas.ac.uk/swift/resources/summary/529%2C518%2C607%2C525%2C609/0#" id="mobmenu">≡</a>
+      </div>
+
+      <div class="resourcenavigator" style="text-align:center">
+        <p id="resource_info">&nbsp;</p>
+        <canvas id="canvas" width="670" height="35"></canvas>
+      </div>
+
+      <div class="resources index summary">
+        <div class="summaryresource">
+          <select id="panel1_select" class="panel_select">
+            <option value="CRR" selected="selected">Convective rainfall intensity (CRR)</option>
+            <option value="PC-Ph">Chance of precipitation (PC-Ph)</option>
+            <option value="RDT">Rapidly developing thunderstorms (RDT)</option>
+            <option value="HRW">Wind barbs - 400 hPa to 600 hPa (HRW)</option>
+          </select>
+          <div id="panel1" class="panel">
+          </div>
+        </div>
+
+        <div class="summaryresource">
+          <select id="panel2_select" class="panel_select">
+            <option value="CRR">Convective rainfall intensity (CRR)</option>
+            <option value="PC-Ph" selected="selected">Chance of precipitation (PC-Ph)</option>
+            <option value="RDT">Rapidly developing thunderstorms (RDT)</option>
+            <option value="HRW">Wind barbs - 400 hPa to 600 hPa (HRW)</option>
+          </select>
+          <div id="panel2" class="panel">
+          </div>
+        </div>
+
+        <div class="summaryresource">
+          <select id="panel3_select" class="panel_select">
+            <option value="CRR">Convective rainfall intensity (CRR)</option>
+            <option value="PC-Ph">Chance of precipitation (PC-Ph)</option>
+            <option value="RDT" selected="selected">Rapidly developing thunderstorms (RDT)</option>
+            <option value="HRW">Wind barbs - 400 hPa to 600 hPa (HRW)</option>
+          </select>
+          <div id="panel3" class="panel">
+          </div>
+        </div>
+
+        <div class="summaryresource">
+          <select id="panel4_select" class="panel_select">
+            <option value="CRR">Convective rainfall intensity (CRR)</option>
+            <option value="PC-Ph">Chance of precipitation (PC-Ph)</option>
+            <option value="RDT">Rapidly developing thunderstorms (RDT)</option>
+            <option value="HRW" selected="selected">Wind barbs - 400 hPa to 600 hPa (HRW)</option>
+          </select>
+          <div id="panel4" class="panel">
+          </div>
+        </div>
+
+      </div>
+      <div id="footer">
+        <div id="footercontent">
+          This website is built as part of the <a href="https://africanswift.org/">African Swift Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+<script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="./js/Slider.js"></script>
+<script type="text/javascript" src="./js/Arrows.js"></script>
+<script type="text/javascript" src="./js/load_panels.js"></script>
+
+</body>
+</html>
